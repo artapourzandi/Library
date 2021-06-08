@@ -4,32 +4,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://bootswatch.com/5/yeti/bootstrap.min.css">
+    <title>Library App</title>
 </head>
 <body>
+    <div class="container mt-4">
+        <h1 class="display-3 text-center"><span class="text-primary">Library </span>App</h1>
 
-    <h2>A Library</h2>
+        <form id="main-form">
+            <div class="form-group mb-3">
+                <label for="title">Title</label>
+                <input type="text" id="title" class="form-control">
+            </div>
+            <div class="form-group mb-3">
+                <label for="author">Author</label>
+                <input type="text" id="author" class="form-control">
+            </div>
+            <div class="form-group mb-3">
+                <label for="pages">Pages</label>
+                <input type="number" id="pages" class="form-control">
+            </div>
+            <div class="form-group mb-5">
+                <label for="read">Read</label>
+                <input type="text" id="read" class="form-control">
+            </div>
+            <input type="submit" value="Add to Library" class="btn btn-outline-primary btn-lg">
+        </form>
 
+        <table class="table table-striped mt-5">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Pages</th>
+                    <th>Read</th>
+                    <th>Remove Item</th>
+                </tr>
+            </thead>
+            <tbody id="book-list"></tbody>
+        </table>
 
-    <label>please insert the TITLE</label>
-    <input type="text" id="title" value="">
+    </div>
 
-    <label>please insert the AUTHOR</label>
-    <input type="text" id="author" value="">
-
-    <label>please insert the TPAGES</label>
-    <input type="text" id="pages" value="">
-
-    <label>please insert the READ</label>
-    <input type="text" id="read" value="">
-
-
-
-    <button onclick="addBookToLibrary()">Add</button>
-
-
-
-
-    <script src="main.js"></script> 
+    <script src="main.js"></script>
 </body>
 </html>
