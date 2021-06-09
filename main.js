@@ -98,7 +98,7 @@ document.querySelector('#main-form').addEventListener('submit', (e) =>
 
     // validating 
     if(title === '' || author === '' || pages === '' || read === '') {
-        UI.showAlert("Nastarn Gian Please fill all the fields", "alert-danger");
+        UI.showAlert("Please fill all the fields", "alert-danger");
     } else {
         // create an instance from object 'Book'
         const book = new Book(title, author, pages, read);
@@ -106,7 +106,7 @@ document.querySelector('#main-form').addEventListener('submit', (e) =>
         // Now we add our instance to our Display
         UI.addBookToList(book);
 
-        UI.showAlert("Thank you lovely Nastaran", "alert-success")
+        UI.showAlert("You are all set", "alert-success")
 
         UI.emptyInput();
     }
