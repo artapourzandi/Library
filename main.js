@@ -119,5 +119,5 @@ document.querySelector('#book-list').addEventListener('click', (e) =>
 {
     UI.deletTheRow(e.target)
 
-    UI.showAlert("Nastarn Gian You Remove a Book", "alert-success")
+    UI.showAlert("You Remove a Book", "alert-success")
 });
